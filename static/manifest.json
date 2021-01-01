@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "百度网盘视频控制",
+    "description": "百度网盘视频控制",
+    "version": "1.0",
+    "browser_action": {},
+    "content_scripts": [
+        {
+            "matches": [
+                "https://pan.baidu.com/*"
+            ],
+            "js": [
+                "inject.js"
+            ]
+        }
+    ],
+    "permissions": []
+}

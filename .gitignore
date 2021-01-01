@@ -1,0 +1,10 @@
+yarn-error.log
+.vscode
+npm-debug.log
+dist
+out
+dist.zip
+dist.rar
+node_modules
+stats.json
+report.html

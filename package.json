@@ -1,0 +1,20 @@
+{
+  "name": "baidudisk-video-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "key": "node ./build/key.js",
+    "crx": "./node_modules/.bin/crx pack dist -o out/baidudisk-video-control.crx -p out/private.pem",
+    "pack": "npm run key && npm run crx",
+    "build": "npx rimraf dist/. && npx copy static/* dist/ && node build/inject.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copy": "^0.3.2",
+    "crx": "^5.0.1",
+    "keypair": "^1.0.1",
+    "rimraf": "^3.0.2"
+  }
+}
